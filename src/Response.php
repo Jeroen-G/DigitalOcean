@@ -2,7 +2,6 @@
 
 namespace JeroenG\DigitalOcean;
 
-
 use Psr\Http\Message\ResponseInterface;
 
 class Response

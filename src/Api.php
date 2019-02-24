@@ -54,5 +54,4 @@ class Api
             return 'Failed request';
         }
     }
-
 }
