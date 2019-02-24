@@ -1,0 +1,40 @@
+{
+    "name": "jeroen-g/digitalocean",
+    "description": "A simple and clean DigitalOcean API implementation for PHP.",
+    "homepage": "https://github.com/jeroen-g/digitalocean",
+    "keywords": ["Laravel", "DigitalOcean", "PHP", "API"],
+    "license": "EUPL-1.1",
+    "authors": [
+        {
+            "name": "Jeroen",
+            "email": "jeroengjeroeng@gmail.com",
+            "homepage": "https://github.com/jeroen-g/"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeroenG\\DigitalOcean\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeroenG\\DigitalOcean\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeroenG\\DigitalOcean\\DigitalOceanServiceProvider"
+            ],
+            "aliases": {
+                "DigitalOcean": "JeroenG\\DigitalOcean\\Facades\\DigitalOcean"
+            }
+        }
+    }
+}
