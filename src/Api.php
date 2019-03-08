@@ -6,9 +6,8 @@ use GuzzleHttp\Client;
 
 class Api
 {
-
     /**
-     * DigitalOcean API endpoint
+     * DigitalOcean API endpoint.
      *
      * @var string
      */
@@ -31,7 +30,7 @@ class Api
     {
         $this->client = new Client([
             'headers' => [
-                'Authorization' => 'Bearer ' . $token,
+                'Authorization' => 'Bearer '.$token,
                 'Accept' => 'application/json',
             ],
             'base_uri' => $this->endpoint,

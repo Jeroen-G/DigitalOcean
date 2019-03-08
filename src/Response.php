@@ -6,7 +6,6 @@ use Psr\Http\Message\ResponseInterface;
 
 class Response
 {
-
     /**
      * The API method called by the request.
      *
@@ -65,7 +64,7 @@ class Response
     /**
      * Get the HTTP response status code.
      *
-     * @return integer
+     * @return int
      */
     public function getStatus()
     {
